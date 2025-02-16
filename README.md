@@ -19,3 +19,9 @@
 <div align="center">
   <a href="https://www.youtube.com/watch?v=k_0Mdt7Aa1w"><img src="https://img.youtube.com/vi/k_0Mdt7Aa1w/0.jpg" alt="Video"></a>
 </div>
+
+# Watch the Video #3 Routing PCB:
+
+<div align="center">
+  <a href="https://www.youtube.com/watch?v=SvnM2PN2_Yc"><img src="https://img.youtube.com/vi/SvnM2PN2_Yc/0.jpg" alt="Video"></a>
+</div>
