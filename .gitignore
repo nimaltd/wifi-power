@@ -51,3 +51,4 @@ dkms.conf
 hw/wifi-power_backup/wifi-power_v121_2025-01-29-20-13.zip
 hw/wifi-power_backup/wifi-power_v157_2025-02-16-11-01.zip
 hw/wifi-power_backup/wifi-power_v84_2025-01-27-20-36.zip
+*.zip
