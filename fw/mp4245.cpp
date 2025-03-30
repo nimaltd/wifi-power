@@ -55,6 +55,7 @@ bool mp4245::begin(void)
 
 void mp4245::enable(bool enable)
 {
+  _is_enable = enable;
   i2c_write8(I2C_OPERATION, enable ? 0x80 : 0x00);
 }
 
@@ -66,6 +67,10 @@ bool mp4245::is_enable(void)
 void mp4245::cfg_set_vout(uint32_t vout_mv)
 {
   i2c_write16(I2C_VOUT_COMMAND, (uint16_t)(vout_mv * 1.024f));
+  if (_is_enable)
+  {
+    i2c_write8(I2C_OPERATION, 0x80);
+  }
 }
 
 void mp4245::cfg_set_iout(uint32_t iout_ma)

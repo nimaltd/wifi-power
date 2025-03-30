@@ -13,20 +13,24 @@ void setup()
   Serial.begin(115200);
   led.begin();
   led.clear();
-  delay(5000);
+  delay(1000);
   dcdc.begin();
-  
-  dcdc.cfg_set_vout(12000);
-  dcdc.enable(true);
-
-  
+  dcdc.enable(true); 
 }
 
 /*************************************************************************************************/
 void loop()
 {
   delay(500);
-  Serial.printf("TEMP: %d C\r\n", dcdc.get_temp());
-  Serial.printf("IOUT: %d mA\r\n", dcdc.get_current());
+  dcdc.cfg_set_vout(1000);
+  delay(500);
+  dcdc.cfg_set_vout(2000);
+  delay(500);
+  dcdc.cfg_set_vout(3000);
+  delay(500);
+  dcdc.cfg_set_vout(4000);
+  delay(500);
+  dcdc.cfg_set_vout(5000);
+
  
 }

@@ -33,6 +33,7 @@ class mp4245
   uint8_t   i2c_read8(uint8_t reg);
   uint16_t  i2c_read16(uint8_t reg);
   
+  bool _is_enable = false;
   int _pin_sda = -1;
   int _pin_sck = -1;
   int _pin_en = -1;
